@@ -33,7 +33,7 @@ function paralelo(vector)
   
     else if()
     {
-        return true;
+        return false;
     }
 }
 
