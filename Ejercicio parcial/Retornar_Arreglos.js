@@ -1,4 +1,5 @@
-function minimo_arreglo(arreglo) {
+function minimo_arreglo(arreglo) 
+{
 
   minimo = arreglo[0]; 
 
@@ -9,8 +10,31 @@ function minimo_arreglo(arreglo) {
         minimo = arreglo[i]; 
       }
     }
-    return minimo; 
+  return minimo; 
 
+}
+
+function paralelo(vector) 
+{
+    if (vector.x == 0 && vector.y == 0) 
+    {
+        return true;
+    }
+  
+    else if (vector.x == 0 && vector.z == 0) 
+    { 
+        return true;
+    }
+  
+    else if (vector.y == 0 && vector.z == 0) 
+    {
+        return true;
+    }
+  
+    else if()
+    {
+        return true;
+    }
 }
 
 
