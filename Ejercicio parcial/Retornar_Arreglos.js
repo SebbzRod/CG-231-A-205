@@ -1,41 +1,24 @@
-function minimo_arreglo(arreglo) 
-{
+  /**
+   * minimo_arreglo(): Recibe un arreglo de variables enteros y retorna la variable con el menor valor
+   * ENTRADAS: numeros = Arreglo de variables num, es decior un arreglo de numeros enteros.
+   * SALIDAS: minimo = Entero con menor valor del arreglo.
+  **/
+  function minimo_arreglo(numeros) 
+  {
 
-  minimo = arreglo[0]; 
+    minimo = numeros[0]; 
 
-    for (let i = 1; i < arreglo.length; i++) 
-    { 
-      if (arreglo[i] < minimo) 
+      for (let i = 1; i < numeros.length; i++) 
       { 
-        minimo = arreglo[i]; 
+        if (numeros[i] < minimo) 
+        { 
+          minimo = numeros[i]; 
+        }
       }
-    }
-  return minimo; 
+    return minimo; 
 
-}
+  }
 
-function paralelo(vector) 
-{
-    if (vector.x == 0 && vector.y == 0) 
-    {
-        return true;
-    }
-  
-    else if (vector.x == 0 && vector.z == 0) 
-    { 
-        return true;
-    }
-  
-    else if (vector.y == 0 && vector.z == 0) 
-    {
-        return true;
-    }
-  
-    else
-    {
-        return false;
-    }
-}
 
 
 
